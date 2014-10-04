@@ -13,7 +13,7 @@ var SRC = {
     JADE: 'src/**/*.jade',
     JS: 'src/**/*.js',
     SASS: 'src/scss/**/*.scss',
-    IMG: 'src/img/**/*.png'
+    IMG: 'src/img/**/*.*'
 };
 
 gulp.task('build-jade', function () {

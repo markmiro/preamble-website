@@ -1,5 +1,6 @@
 @import 'reset';
 
+$gray: #e6e6eb;
 $purple: #8d47b3;
 $blue: #4e47b3;
 
@@ -7,7 +8,14 @@ $blue: #4e47b3;
 
 html {
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 200;
 }
+
+body {
+    max-width: 440px;
+    margin: 0 auto;
+}
+
 .hero {
     background: linear-gradient(rgba($purple, 0.6), rgba($blue, 1)), url(../img/iphone-6-hand-mockup.jpg);
     background-repeat: no-repeat;
@@ -16,6 +24,7 @@ html {
     color: white;
     font-weight: 200;
     padding: 12px;
+    height: 460px;
 
     .logo {
         width: 100px;
@@ -52,7 +61,46 @@ html {
         color: white;
         opacity: 0.5;
     }
-    // .beta-signup__email::-input-placeholder {
-    //     color: red;
-    // }
+}
+
+.section {
+    padding-top: 60px;
+    font-size: 18px;
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: $gray;
+    p {
+        padding: 12px;
+        line-height: 21px;
+        text-align: center;
+    }
+}
+
+.screenshot {
+    position: relative;
+    // border-bottom: 1px solid $gray;
+    img {
+        display: block;
+        width: 250px;
+        margin: 0 auto;
+    }
+    &:after {
+        $shadow-height: 50px;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: $shadow-height;
+        width: 100%;
+        background: linear-gradient(rgba($gray, 0), rgba($gray, 0.8));
+    }
+}
+
+.youtube-insert {
+    display: block;
+    margin: 30px auto;
+}
+
+.border {
+    border-top: 1px solid $gray;
 }
