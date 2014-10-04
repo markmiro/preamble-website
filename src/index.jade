@@ -4,8 +4,11 @@ html
         link(href='css/app.css' rel='stylesheet')
         <meta name="viewport" content="width=device-width, initial-scale=1">
     body
-        //- h1 Preamble
-        //- p Hi there
-        img.logo(src='img/preamble-logo-white.png')
-        //- a(href='/about') About
-        script(type='text/javascript', src='app.js')
+        .hero
+            img.logo(src='img/preamble-logo-white.png')
+            h1 Networking should be easy
+            .subtitle Connecting and following up made simple
+            .beta-signup
+                | Sign up for our private beta:
+                input(value='Your email')
+            script(type='text/javascript', src='app.js')

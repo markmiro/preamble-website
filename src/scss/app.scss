@@ -1,15 +1,14 @@
+@import 'reset';
 html {
-    background: black;
-    // h1 {
-    //     color: white;
-    //     background: blue;
-    // }
-    // p {
-    //     color: gray;
-    // }
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
-.logo {
-    width: 100px;
-    display: block;
-    margin: 0 auto; // center
+.hero {
+    background: black;
+    color: white;
+
+    .logo {
+        width: 100px;
+        display: block;
+        margin: 0 auto;
+    }
 }
