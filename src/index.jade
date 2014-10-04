@@ -8,10 +8,26 @@ html
             img.logo(src='img/preamble-logo-white.png')
             h1 Networking should be easy
             .subtitle Connecting and<br/>following up made simple
-            .beta-signup
-                .beta-signup__label Sign up for our private beta:
-                input.beta-signup__email(placeholder='Your email')
-            script(type='text/javascript', src='app.js')
+
+            #mc_embed_signup
+                form#mc-embedded-subscribe-form.validate(action='//preamble.us9.list-manage.com/subscribe/post?u=df508d4e2bb5420610852c495&id=eb5c01204a', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='novalidate')
+                    #mc_embed_signup_scroll
+                      h2.beta-signup__label Sign up for our private beta:
+                      .mc-field-group
+                        input#mce-EMAIL.required.email.beta-signup__email(type='email', value='', name='EMAIL' placeholder='Your email')
+                      #mce-responses.clear
+                        #mce-error-response.response(style='display: none;')
+                        #mce-success-response.response(style='display: none;')
+                      // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                      div(style='position: absolute; left: -5000px;')
+                        input(type='text', name='b_df508d4e2bb5420610852c495_eb5c01204a', tabindex='-1', value='')
+                      .clear
+                        input#mc-embedded-subscribe.hidden-submit(type='submit', value='Add me', name='subscribe')
+
+            //- .beta-signup
+            //-     .beta-signup__label Sign up for our private beta:
+            //-     input.beta-signup__email(placeholder='Your email')
+            .scroll-indicator Learn more
         .section
             .screenshot
                 img(src='img/iphone-profile-screenshot.png')
@@ -28,3 +44,7 @@ html
             .border
             p Watch our video
             iframe.youtube-insert(width="320px" height="180px" src="//www.youtube.com/embed/2F2cVlfiYFc" frameborder="0" allowfullscreen)
+        .footer Copyright 2014 Preamble.
+
+        script(type='text/javascript').
+            document.querySelector('.hero').style.height = window.innerHeight + 'px';
