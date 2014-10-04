@@ -17,6 +17,7 @@ body {
 }
 
 .hero {
+    position: relative;
     background: linear-gradient(rgba($purple, 0.6), rgba($blue, 1)), url(../img/iphone-6-hand-mockup.jpg);
     background-repeat: no-repeat;
     background-position: top left, 40% center;
@@ -24,7 +25,6 @@ body {
     color: white;
     font-weight: 200;
     padding: 12px;
-    height: 460px;
 
     .logo {
         width: 100px;

@@ -47,4 +47,4 @@ html
         .footer Copyright 2014 Preamble.
 
         script(type='text/javascript').
-            document.querySelector('.hero').style.height = window.innerHeight + 'px';
+            document.querySelector('.hero').style.height = (window.innerHeight < 600) ? window.innerHeight + 'px' : '600px';
