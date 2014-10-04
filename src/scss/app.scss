@@ -1,14 +1,58 @@
 @import 'reset';
+
+$purple: #8d47b3;
+$blue: #4e47b3;
+
+* { box-sizing: border-box; }
+
 html {
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 .hero {
-    background: black;
+    background: linear-gradient(rgba($purple, 0.6), rgba($blue, 1)), url(../img/iphone-6-hand-mockup.jpg);
+    background-repeat: no-repeat;
+    background-position: top left, 40% center;
+    background-size: cover;
     color: white;
+    font-weight: 200;
+    padding: 12px;
 
     .logo {
         width: 100px;
         display: block;
-        margin: 0 auto;
+        margin: 20px auto;
+        margin-bottom: 40px;
     }
+    h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .subtitle {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 40px;
+        opacity: 0.5;
+    }
+    .beta-signup__label {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    .beta-signup__email {
+        font-size: 18px;
+        background: none;
+        border: 1px solid white;
+        color: rgba(255, 255, 255, 0.43);
+        padding: 8px 12px;
+        width: 100%;
+        border-radius: 8px;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        font-weight: 200;
+    }
+    ::-webkit-input-placeholder {
+        color: white;
+        opacity: 0.5;
+    }
+    // .beta-signup__email::-input-placeholder {
+    //     color: red;
+    // }
 }
