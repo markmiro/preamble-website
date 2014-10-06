@@ -1,8 +1,36 @@
 doctype html
-html
+html(itemscope='itemscope', itemtype='http://schema.org/Product')
     head
         link(href='css/app.css' rel='stylesheet')
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+
+        <!-- Place this data between the <head> tags of your website -->
+        <title>Preamble App</title>
+        <meta name="description" content="Finally, networking made easy." />
+
+        <!-- Schema.org markup for Google+ -->
+        <meta itemprop="name" content="Preamble App">
+        <meta itemprop="description" content="Finally,networking made easy.">
+        <meta itemprop="image" content="http://www.preamble.im/img/social.jpg">
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="Preamble App">
+        <meta name="twitter:site" content="@preambleapp">
+        <meta name="twitter:title" content="Preamble App">
+        <meta name="twitter:description" content="Finally, networking made easy.">
+        <meta name="twitter:creator" content="@preambleapp">
+        <meta name="twitter:image" content="http://www.preamble.im/social.jpg">
+
+        <!-- Open Graph data -->
+        <meta property="og:title" content="Preamble App" />
+        <meta property="og:type" content="Finally, networking made easy." />
+        <meta property="og:url" content="http://www.preamble.im/" />
+        <meta property="og:image" content="http://preamble.im/img/social.jpg" />
+        <meta property="og:description" content="Finally, networking made easy." />
+        <meta property="og:site_name" content="Preamble" />
+        <script type="text/javascript">window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));</script>
+
+
     body
         .hero
             img.logo(src='img/preamble-logo-white.png')
@@ -24,26 +52,25 @@ html
                             input(type='text', name='b_df508d4e2bb5420610852c495_eb5c01204a', tabindex='-1', value='')
                           .clear
                             input#mc-embedded-subscribe.hidden-submit(type='submit', value='Add me', name='subscribe')
-
+                <a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true" data-count="none" data-via="twitterdev">Tweet</a>
+                <iframe class="facebook-button" src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FPreamble%2F522711347834282%3Fref%3Dhl&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=20&amp;width=100" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:20px; width:100px;" allowTransparency="true"></iframe>
                 //- .beta-signup
                 //-     .beta-signup__label Sign up for our private beta:
                 //-     input.beta-signup__email(placeholder='Your email')
             .scroll-indicator Learn more
         .section
+            p A Preamble is a business card designed for easy mobile sharing.
             .screenshot
                 img(src='img/iphone-profile-screenshot.png')
-            p A Preamble is a business card designed for easy mobile sharing.
         .section
-            .screenshot
-                img(src='img/iphone-dial-screenshot.png')
             p Make a connection with SMS by texting your Preamble profile.
+            .screenshot.screenshot--faded-top
+                img(src='img/iphone-dial-screenshot.png')
         .section
-            .screenshot
-                img(src='img/htc-one-m8-receive-preamble-screenshot.png')
             p Your new connection will receive a link to your profile. They can text back to continue the conversation.
-        .section
-            .border
-            iframe.youtube-insert(width="320px" height="180px" src="//www.youtube.com/embed/2F2cVlfiYFc" frameborder="0" allowfullscreen)
+            .screenshot.screenshot--faded-top
+                img(src='img/htc-one-m8-receive-preamble-screenshot.png')
+        iframe.youtube-insert(width="320px" height="180px" src="//www.youtube.com/embed/2F2cVlfiYFc" frameborder="0" allowfullscreen)
         .footer Copyright 2014 Preamble.
 
         script(type='text/javascript').
