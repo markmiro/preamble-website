@@ -14,7 +14,7 @@ html(itemscope='itemscope', itemtype='http://schema.org/Product')
         <meta itemprop="image" content="http://www.preamble.im/img/social.jpg">
 
         <!-- Twitter Card data -->
-        <meta name="twitter:card" content="Preamble App">
+        <meta name="twitter:card" content="I want to use the Preamble App">
         <meta name="twitter:site" content="@preambleapp">
         <meta name="twitter:title" content="Preamble App">
         <meta name="twitter:description" content="Finally, networking made easy.">
@@ -52,26 +52,32 @@ html(itemscope='itemscope', itemtype='http://schema.org/Product')
                             input(type='text', name='b_df508d4e2bb5420610852c495_eb5c01204a', tabindex='-1', value='')
                           .clear
                             input#mc-embedded-subscribe.hidden-submit(type='submit', value='Add me', name='subscribe')
-                <a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true" data-count="none" data-via="twitterdev">Tweet</a>
-                <iframe class="facebook-button" src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FPreamble%2F522711347834282%3Fref%3Dhl&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=20&amp;width=100" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:20px; width:100px;" allowTransparency="true"></iframe>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true" data-count="none">Tweet</a>
+                <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FPreamble%2F522711347834282%3Fref%3Dhl&amp;width=100&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=20&amp;colorscheme=dark" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:20px;" allowTransparency="true"></iframe>
                 //- .beta-signup
                 //-     .beta-signup__label Sign up for our private beta:
                 //-     input.beta-signup__email(placeholder='Your email')
             .scroll-indicator Learn more
+        .screenshot-sections
+            .section.section--phone
+                p A Preamble is a business card designed for easy mobile sharing.
+                .screenshot
+                    img(src='img/iphone-profile-screenshot.png')
+            .section.section--phone
+                p Make a connection with SMS by texting your Preamble profile.
+                .screenshot.screenshot--faded-top
+                    img(src='img/iphone-dial-screenshot.png')
+            .section.section--phone
+                p Your new connection will receive a link to your profile. They can text back to continue the conversation.
+                .screenshot.screenshot--faded-top
+                    img(src='img/htc-one-m8-receive-preamble-screenshot.png')
+            .clear
         .section
-            p A Preamble is a business card designed for easy mobile sharing.
-            .screenshot
-                img(src='img/iphone-profile-screenshot.png')
+            iframe.youtube-insert(width="320px" height="180px" src="//www.youtube.com/embed/vn6RQXhezT0" frameborder="0" allowfullscreen)
         .section
-            p Make a connection with SMS by texting your Preamble profile.
-            .screenshot.screenshot--faded-top
-                img(src='img/iphone-dial-screenshot.png')
-        .section
-            p Your new connection will receive a link to your profile. They can text back to continue the conversation.
-            .screenshot.screenshot--faded-top
-                img(src='img/htc-one-m8-receive-preamble-screenshot.png')
-        iframe.youtube-insert(width="320px" height="180px" src="//www.youtube.com/embed/2F2cVlfiYFc" frameborder="0" allowfullscreen)
+            p We believe
+            .blurb Networking is not only about making connections but developing connections.  With Preamble you can create your own digital buisness card and follow up effortlessly with sms and messaging.
         .footer Copyright 2014 Preamble.
 
         script(type='text/javascript').
-            document.querySelector('.hero').style.height = (window.innerHeight < 600) ? window.innerHeight + 'px' : (window.innerHeight * .8) + 'px';
+            document.querySelector('.hero').style.minHeight = (window.innerHeight < 600) ? window.innerHeight + 'px' : (window.innerHeight * .8) + 'px';
