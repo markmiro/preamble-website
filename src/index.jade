@@ -14,7 +14,7 @@ html(itemscope='itemscope', itemtype='http://schema.org/Product')
         <meta itemprop="image" content="http://www.preamble.im/img/social.jpg">
 
         <!-- Twitter Card data -->
-        <meta name="twitter:card" content="I want to use the Preamble App">
+        <meta name="twitter:card" content="Preamble App">
         <meta name="twitter:site" content="@preambleapp">
         <meta name="twitter:title" content="Preamble App">
         <meta name="twitter:description" content="Finally, networking made easy.">
@@ -30,7 +30,6 @@ html(itemscope='itemscope', itemtype='http://schema.org/Product')
         <meta property="og:site_name" content="Preamble" />
         <script type="text/javascript">window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));</script>
 
-
     body
         .hero
             img.logo(src='img/preamble-logo-white.png')
@@ -42,8 +41,9 @@ html(itemscope='itemscope', itemtype='http://schema.org/Product')
                     form#mc-embedded-subscribe-form.validate(action='//preamble.us9.list-manage.com/subscribe/post?u=df508d4e2bb5420610852c495&id=eb5c01204a', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='novalidate')
                         #mc_embed_signup_scroll
                           h2.beta-signup__label Sign up for our private beta:
-                          .mc-field-group
+                          .mc-field-group(style='margin-bottom:10px')
                             input#mce-EMAIL.required.email.beta-signup__email(type='email', value='', name='EMAIL' placeholder='Your email')
+                            .clear
                           #mce-responses.clear
                             #mce-error-response.response(style='display: none;')
                             #mce-success-response.response(style='display: none;')
@@ -51,7 +51,7 @@ html(itemscope='itemscope', itemtype='http://schema.org/Product')
                           div(style='position: absolute; left: -5000px;')
                             input(type='text', name='b_df508d4e2bb5420610852c495_eb5c01204a', tabindex='-1', value='')
                           .clear
-                            input#mc-embedded-subscribe.hidden-submit(type='submit', value='Add me', name='subscribe')
+                            input#mc-embedded-subscribe.hidden-submit(type='submit', value='Submit', name='subscribe')
                 <a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true" data-count="none">Tweet</a>
                 <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FPreamble%2F522711347834282%3Fref%3Dhl&amp;width=100&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=20&amp;colorscheme=dark" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:20px;" allowTransparency="true"></iframe>
                 //- .beta-signup

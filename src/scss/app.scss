@@ -83,11 +83,18 @@ body {
             line-height: 1;
         }
     }
+
+    input:focus {
+        outline: 0;
+        box-shadow: 0 0 10px lighten($purple, 20%);
+    }
+
     .beta-signup__label {
         font-size: 16px;
         margin-bottom: 8px;
     }
     .beta-signup__email {
+        -webkit-appearance: none;
         font-size: 18px;
         background: none;
         border: 1px solid white;
@@ -99,15 +106,27 @@ body {
         font-weight: 200;
         max-width: 300px;
         opacity: 1;
-        &:focus {
-            outline: 0;
-            box-shadow: 0 0 10px lighten($purple, 20%);
-        }
+        float: left;
     }
     ::-webkit-input-placeholder {
         -webkit-appearance: none;
         color: white;
         opacity: 0.5;
+    }
+
+    .beta-signup__submit {
+        float: left;
+        margin-right: 100%;
+        background: white;
+        border: 0;
+        color: $blue;
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 8px;
+        margin: 0;
+        margin-left: 10px;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        font-weight: 200;
     }
 
     .scroll-indicator {
